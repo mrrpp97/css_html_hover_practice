@@ -79,3 +79,20 @@ body {
 #b3:hover {
   color: black;
 }
+#b4::before {
+  content: "";
+
+  background: #9d0208;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s ease;
+  transform: rotate(-45deg);
+}
+#b4:hover::before {
+  height: 450%;
+}
+#b4:hover {
+  color: black;
+}
