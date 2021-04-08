@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #03071e;
+}
+.cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #9d0208;
+  height: 80vh;
+  width: 80vw;
+  margin: 50px auto;
+  border-radius: 12px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 34px;
+  padding: 12px 37px;
+  position: relative;
+  color: #9d0208;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  transition: all 1s ease;
+  outline: 2px solid #9d0208;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+#b1::before {
+  content: "";
+
+  background: #9d0208;
+  position: absolute;
+  height: 200%;
+  width: 0%;
+  z-index: -1;
+  transition: all 1s ease;
+}
+#b1:hover::before {
+  width: 100%;
+}
+#b1:hover {
+  color: black;
+}
+#b2::before {
+  content: "";
+
+  background: #9d0208;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s ease;
+  transform: rotate(45deg);
+}
+#b2:hover::before {
+  height: 350%;
+}
+#b2:hover {
+  color: black;
+}
+#b3::before {
+  content: "";
+  background: #9d0208;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  z-index: -20;
+  transition: all 1s ease;
+}
+#b3:hover::before {
+  height: 100%;
+}
+#b3:hover {
+  color: black;
+}
