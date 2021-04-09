@@ -4,7 +4,7 @@ body {
   background-image: url("13324.jpg");
   background-size: cover;
   position: relative;
-  z-index: auto;
+  z-index: 0;
 }
 .cnt {
   display: flex;
