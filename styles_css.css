@@ -118,14 +118,14 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 60vh;
-  height: 60vh;
-  margin: 100px auto;
+  margin: 120px auto;
   position: relative;
   border: 2px solid #adb5bd;
   background-image: url("13324.jpg");
   background-size: cover;
   z-index: 1;
+  width: 80vw;
+  height: 60vh;
 }
 .box input {
   text-align: center;
@@ -138,12 +138,12 @@ body {
   border: 2px solid #adb5bd;
   border-radius: 12px;
   outline: none;
-  width: 70%;
   transition: all 1s ease;
   margin: 20px auto;
+  width: 70%;
 }
 .box input:hover {
-  width: 95%;
+  width: 90%;
   background: #adb5bd;
 }
 .box h3 {
