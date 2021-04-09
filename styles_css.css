@@ -70,7 +70,7 @@ body {
   position: absolute;
   height: 0%;
   width: 100%;
-  z-index: -20;
+  z-index: -1;
   transition: all 1s ease;
 }
 #b3:hover::before {
@@ -79,9 +79,9 @@ body {
 #b3:hover {
   color: black;
 }
+
 #b4::before {
   content: "";
-
   background: #9d0208;
   position: absolute;
   height: 0%;
@@ -95,4 +95,81 @@ body {
 }
 #b4:hover {
   color: black;
+}
+#b5 {
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  transition: all 0.5s ease;
+  border: none;
+  color: rgb(173, 189, 231);
+  outline: 2px solid rgb(173, 189, 231);
+}
+
+#b5:hover {
+  background: rgb(173, 189, 231);
+  color: #03071e;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 60vh;
+  height: 60vh;
+  margin: 100px auto;
+  position: relative;
+  border: 2px solid #adb5bd;
+}
+.box input {
+  text-align: center;
+  font-family: "ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 7px;
+  border: 2px solid #adb5bd;
+  border-radius: 12px;
+  outline: none;
+  width: 70%;
+  transition: all 1s ease;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.5);
+}
+.box input:hover {
+  width: 95%;
+  background: #adb5bd;
+}
+.box h3 {
+  color: #adb5bd;
+  font-family: "ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+.box #sub {
+  color: #adb5bd;
+  outline: 2px solid #adb5bd;
+  margin: 20px auto;
+}
+.box #sub::before {
+  content: "";
+  background: #adb5bd;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s ease;
+  transform: rotate(-45deg);
+}
+#sub:hover {
+  color: black;
+}
+
+#sub:hover::before {
+  height: 450%;
 }
